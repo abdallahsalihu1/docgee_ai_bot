@@ -31,7 +31,7 @@ function DocGeeChat() {
     if (!messageToSend) return;
 
     try {
-      const res = await fetch("http://localhost:3000/chat", {
+      const res = await fetch(`${process.env.REACT_APP_API_URL}`/chat , {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
