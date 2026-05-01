@@ -99,7 +99,7 @@ if (TOKEN && BASE_URL) {
   bot = new TelegramBot(TOKEN);
 
   // Set webhook (important for Render/Vercel)
-  bot.setWebHook($`{BASE_URL}/telegram`);
+  bot.setWebHook(`${BASE_URL}/telegram`);
 
   console.log("Telegram bot webhook set:", `${BASE_URL}/telegram`);
 }
